@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Chrome"/>
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+  <parameter name="username" value="admin123"/>
+  <test thread-count="5" name="OrangeHRMLogin(failed)">
+    <classes>
+      <class name="com.hyrs.Tests.OrangeHrm">
+        <methods>
+          <include name="VerifyLogin"/>
+          <include name="InitialiseBrowser"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.hyrs.Tests.OrangeHrm -->
+    </classes>
+  </test> <!-- OrangeHRMLogin(failed) -->
+  <test thread-count="5" name="OrangeHRMMyInfo(failed)">
+    <classes>
+      <class name="com.hyrs.Tests.OrangeHrm">
+        <methods>
+          <include name="NavigateToMyInfo"/>
+          <include name="VerifyMyInfo"/>
+          <include name="InitialiseBrowser"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.hyrs.Tests.OrangeHrm -->
+    </classes>
+  </test> <!-- OrangeHRMMyInfo(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+  <test  name="Regression Test">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="com.hyr.demoTests.NewTest2"/>
+      <class name="com.dataProvider.BasicTest3"/>
+      <class name="com.dataProvider.BasicTest4"/>
+      <class name="com.hyr.dependencyTests.TestDependency"/>
+      <class name="com.hyr.groupTests.NewTest2"/>
+      <class name="com.hyrs.Tests.FirstTest"/>
+      <class name="com.hyrs.Tests.OrangeHrm"/>
+      <class name="com.hyr.demoTests.NewTest"/>
+      <class name="com.hyr.groupTests.NewTest"/>
+      <class name="com.hyr.parallelTest.TestClass2"/>
+      <class name="com.hyr.parallelTest.TestClass1"/>
+      <class name="com.hyr.parallelTest.TestClass3"/>
+      <class name="com.hyrs.Tests.AnnotationsTest"/>
+      <class name="com.dataProvider.BasicTestExcel"/>
+      <class name="com.hyr.dependencyTests.TestGroupdependency"/>
+      <class name="com.dataProvider.BasicTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
